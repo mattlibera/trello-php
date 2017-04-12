@@ -1,4 +1,4 @@
-<?php namespace Stevenmaguire\Services\Trello;
+<?php namespace Mattlibera\Services\Trello;
 
 use GuzzleHttp\Client as HttpClient;
 use GuzzleHttp\ClientInterface as HttpClientInterface;

@@ -1,6 +1,6 @@
-<?php namespace Stevenmaguire\Services\Trello\Tests;
+<?php namespace Mattlibera\Services\Trello\Tests;
 
-use Stevenmaguire\Services\Trello\Exceptions\Exception;
+use Mattlibera\Services\Trello\Exceptions\Exception;
 
 trait ApiTestTrait
 {

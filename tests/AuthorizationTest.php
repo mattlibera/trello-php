@@ -1,12 +1,12 @@
-<?php namespace Stevenmaguire\Services\Trello\Tests;
+<?php namespace Mattlibera\Services\Trello\Tests;
 
 use League\OAuth1\Client\Credentials\TemporaryCredentials;
 use League\OAuth1\Client\Credentials\TokenCredentials;
 use League\OAuth1\Client\Server\Trello as OAuth;
 use Mockery as m;
-use Stevenmaguire\Services\Trello\Authorization;
-use Stevenmaguire\Services\Trello\Client;
-use Stevenmaguire\Services\Trello\Configuration;
+use Mattlibera\Services\Trello\Authorization;
+use Mattlibera\Services\Trello\Client;
+use Mattlibera\Services\Trello\Configuration;
 
 class AuthorizationTest extends \PHPUnit_Framework_TestCase
 {
@@ -58,7 +58,7 @@ class AuthorizationTest extends \PHPUnit_Framework_TestCase
     {
         $sessionKey = Authorization::class.':temporary_credentials';
         $tempCredentials = new TemporaryCredentials;
-        $_SESSION[$sessionKey] = serialize($tempCredentials);
+        session()->put($sessionKey, serialize($tempCredentials));
         session_write_close();
         $oauthToken = uniqid();
         $oauthVerifier = uniqid();

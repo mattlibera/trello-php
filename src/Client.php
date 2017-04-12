@@ -1,4 +1,4 @@
-<?php namespace Stevenmaguire\Services\Trello;
+<?php namespace Mattlibera\Services\Trello;
 
 use GuzzleHttp\ClientInterface as HttpClient;
 
@@ -45,7 +45,7 @@ class Client
     /**
      * Retrieves a new authorization broker.
      *
-     * @return Stevenmaguire\Services\Trello\Authorization
+     * @return Mattlibera\Services\Trello\Authorization
      */
     public function getAuthorization()
     {
@@ -55,7 +55,7 @@ class Client
     /**
      * Retrieves currently configured http broker.
      *
-     * @return Stevenmaguire\Services\Trello\Http
+     * @return Mattlibera\Services\Trello\Http
      */
     public function getHttp()
     {

@@ -1,4 +1,4 @@
-<?php namespace Stevenmaguire\Services\Trello;
+<?php namespace Mattlibera\Services\Trello;
 
 class Configuration
 {

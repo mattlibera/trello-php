@@ -1,14 +1,14 @@
 {
-    "name" : "stevenmaguire/trello-php",
-    "description" : "PHP wrapper for Trello API",
-    "keywords" : ["trello","php","client","wrapper","trello gold"],
-    "homepage" : "http://github.com/stevenmaguire/trello-php",
+    "name" : "mattlibera/trello-php",
+    "description" : "PHP wrapper for Trello API - forked for use in Laravel 5.4",
+    "keywords" : ["trello","php","client","wrapper","trello gold","laravel"],
+    "homepage" : "http://github.com/mattlibera/trello-php",
     "license" : "MIT",
     "authors" : [
         {
-            "name" : "Steven Maguire",
-            "email" : "stevenmaguire@gmail.com",
-            "homepage" : "http://stevenmaguire.com",
+            "name" : "Matt Libera",
+            "email" : "matt@mattlibera.com",
+            "homepage" : "http://mattlibera.com",
             "role" : "Developer"
         }
     ],
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Stevenmaguire\\Services\\Trello\\": "src/"
+            "Mattlibera\\Services\\Trello\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Stevenmaguire\\Services\\Trello\\Tests\\": "tests/"
+            "Mattlibera\\Services\\Trello\\Tests\\": "tests/"
         },
         "classmap": [
             "src/",

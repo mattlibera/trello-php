@@ -1,6 +1,6 @@
-<?php namespace Stevenmaguire\Services\Trello\Traits;
+<?php namespace Mattlibera\Services\Trello\Traits;
 
-use Stevenmaguire\Services\Trello\Configuration;
+use Mattlibera\Services\Trello\Configuration;
 
 trait ConfigurationTrait
 {

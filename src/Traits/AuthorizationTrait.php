@@ -1,4 +1,4 @@
-<?php namespace Stevenmaguire\Services\Trello\Traits;
+<?php namespace Mattlibera\Services\Trello\Traits;
 
 use League\OAuth1\Client\Credentials\TemporaryCredentials;
 
@@ -7,7 +7,7 @@ trait AuthorizationTrait
     /**
      * Retrieves currently configured authorization broker.
      *
-     * @return Stevenmaguire\Services\Trello\Authorization
+     * @return Mattlibera\Services\Trello\Authorization
      * @codeCoverageIgnore
      */
     abstract public function getAuthorization();
@@ -15,7 +15,7 @@ trait AuthorizationTrait
     /**
      * Retrieves currently configured http broker.
      *
-     * @return Stevenmaguire\Services\Trello\Http
+     * @return Mattlibera\Services\Trello\Http
      * @codeCoverageIgnore
      */
     abstract public function getHttp();

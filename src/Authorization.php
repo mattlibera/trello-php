@@ -1,4 +1,4 @@
-<?php namespace Stevenmaguire\Services\Trello;
+<?php namespace Mattlibera\Services\Trello;
 
 use League\OAuth1\Client\Credentials\CredentialsInterface;
 use League\OAuth1\Client\Credentials\TemporaryCredentials;
@@ -56,7 +56,7 @@ class Authorization
         if (is_null($temporaryCredentials)) {
             $sessionKey = self::getCredentialSessionKey();
             $temporaryCredentials = $this->getTemporaryCredentials();
-            $_SESSION[$sessionKey] = serialize($temporaryCredentials);
+            session()->put($sessionKey, serialize($temporaryCredentials));
             session_write_close();
         }
 
@@ -102,8 +102,8 @@ class Authorization
     {
         if (is_null($temporaryCredentials)) {
             $sessionKey = self::getCredentialSessionKey();
-            $temporaryCredentials = unserialize($_SESSION[$sessionKey]);
-            unset($_SESSION[$sessionKey]);
+            $temporaryCredentials = unserialize(session($sessionKey));
+            session()->forget($sessionKey);
             session_write_close();
         }
 

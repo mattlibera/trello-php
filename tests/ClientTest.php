@@ -1,4 +1,4 @@
-<?php namespace Stevenmaguire\Services\Trello\Tests;
+<?php namespace Mattlibera\Services\Trello\Tests;
 
 use GuzzleHttp\ClientInterface as HttpClient;
 use Mockery as m;
@@ -6,9 +6,9 @@ use GuzzleHttp\Exception\BadResponseException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\StreamInterface;
-use Stevenmaguire\Services\Trello\Authorization;
-use Stevenmaguire\Services\Trello\Client;
-use Stevenmaguire\Services\Trello\Exceptions\Exception as ServiceException;
+use Mattlibera\Services\Trello\Authorization;
+use Mattlibera\Services\Trello\Client;
+use Mattlibera\Services\Trello\Exceptions\Exception as ServiceException;
 
 class ClientTest extends \PHPUnit_Framework_TestCase
 {
@@ -157,7 +157,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Stevenmaguire\Services\Trello\Exceptions\Exception
+     * @expectedException Mattlibera\Services\Trello\Exceptions\Exception
      */
     public function testBadRequestThrowsExeptionWithValidJson()
     {
@@ -169,7 +169,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Stevenmaguire\Services\Trello\Exceptions\Exception
+     * @expectedException Mattlibera\Services\Trello\Exceptions\Exception
      */
     public function testBadRequestThrowsExeptionWithoutValidJson()
     {

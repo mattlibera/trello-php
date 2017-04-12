@@ -1,6 +1,6 @@
-<?php namespace Stevenmaguire\Services\Trello\Tests;
+<?php namespace Mattlibera\Services\Trello\Tests;
 
-use Stevenmaguire\Services\Trello\Client;
+use Mattlibera\Services\Trello\Client;
 
 class BuilderTest extends \PHPUnit_Framework_TestCase
 {

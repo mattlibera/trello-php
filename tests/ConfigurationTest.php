@@ -1,7 +1,7 @@
-<?php namespace Stevenmaguire\Services\Trello\Tests;
+<?php namespace Mattlibera\Services\Trello\Tests;
 
-use Stevenmaguire\Services\Trello\Client;
-use Stevenmaguire\Services\Trello\Configuration;
+use Mattlibera\Services\Trello\Client;
+use Mattlibera\Services\Trello\Configuration;
 
 class ConfigurationTest extends \PHPUnit_Framework_TestCase
 {

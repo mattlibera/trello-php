@@ -1,11 +1,11 @@
-<?php namespace Stevenmaguire\Services\Trello\Traits;
+<?php namespace Mattlibera\Services\Trello\Traits;
 
 trait SearchTrait
 {
     /**
      * Retrieves currently configured http broker.
      *
-     * @return Stevenmaguire\Services\Trello\Http
+     * @return Mattlibera\Services\Trello\Http
      * @codeCoverageIgnore
      */
     abstract public function getHttp();

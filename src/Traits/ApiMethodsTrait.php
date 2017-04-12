@@ -1,4 +1,4 @@
-<?php namespace Stevenmaguire\Services\Trello\Traits;
+<?php namespace Mattlibera\Services\Trello\Traits;
 
 use BadMethodCallException;
 
@@ -347,7 +347,7 @@ trait ApiMethodsTrait
     /**
      * Retrieves currently configured http broker.
      *
-     * @return Stevenmaguire\Services\Trello\Http
+     * @return Mattlibera\Services\Trello\Http
      * @codeCoverageIgnore
      */
     abstract public function getHttp();
